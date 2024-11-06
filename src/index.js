@@ -29,6 +29,7 @@ const server = http.createServer((request, response) => {
                 response.end(data);
             }
         });
+        
     } else if (Object.keys(query).length === 0) {
         // Обработка запроса без параметров
         response.writeHead(200, { 'Content-Type': 'text/plain' });
